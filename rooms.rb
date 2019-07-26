@@ -4,6 +4,21 @@ class Room
 
   def initialize(name)
     @name = name
-  end 
+    @rooms = []
+    @songs = []
+    @check_in = []
+  end
+
+  def check_in_count()
+    @check_in.count()
+  end
+
+  def guest_check_in(guest)
+    @check_in << guest
+  end
+
+  def guest_checked_out(guest)
+    @check_in.delete(guest)
+  end
 
 end
