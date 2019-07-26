@@ -8,7 +8,7 @@ class SongTest < MiniTest::Test
     @song = Song.new("Livin' On A Prayer")
   end
 
-  def test_get_song
+  def test_get_song()
     assert_equal("Livin' On A Prayer", @song.name)
   end
 
